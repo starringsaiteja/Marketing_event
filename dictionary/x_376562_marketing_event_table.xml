@@ -3,7 +3,12 @@
         <element label="Budget" max_length="20" name="budget" type="currency"/>
         <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
         <element choice="1" default="40" label="Event type" max_length="40" name="event_type" type="choice">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="LUG" sequence="0" value="LUG"/>
+                <element inactive_on_update="false" label="Major" sequence="1" value="Major"/>
+                <element inactive_on_update="false" label="Seminar" sequence="2" value="Seminar"/>
+                <element inactive_on_update="false" label="Booth" sequence="3" value="Booth"/>
+            </choice>
         </element>
         <element label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
         <element default="40" display="true" label="Name" max_length="40" name="name" type="string"/>
